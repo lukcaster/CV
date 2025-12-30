@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import * as icons from '@fortawesome/angular-fontawesome';
-import { FaIconComponent } from "../../../node_modules/@fortawesome/angular-fontawesome/icon/icon.component";
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faEnvelope, faHome, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -9,13 +10,13 @@ import { FaIconComponent } from "../../../node_modules/@fortawesome/angular-font
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements OnInit {
-  user: any;
-  house: any;
-  phone: any;
-  comments: any;
-  masks: any;
+  faUser = faUser;
+  faHome = faHome;
+  faPhone = faPhone;
+  faEnvelope = faEnvelope;
+  faGithub = faGithub;
+  faCode = faCode;
 
   ngOnInit(): void {
-    this.masks = icons.FaConfig
   }
 }

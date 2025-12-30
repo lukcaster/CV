@@ -1,33 +1,80 @@
-<section>
+<section class="about-section">
     <div class="container">
-        <h1><strong>About section</strong></h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-12" data-aos="fade-right">
-                <img>
+        <h1 class="section-title"><strong>About Me</strong></h1>
+        <div class="about-content">
+            <!-- Left side: Image and Personal Info -->
+            <div class="left-column" data-aos="fade-right">
+                <div class="image-container">
+                    <img src="assets/background.png" alt="Profile Photo" class="profile-image">
+                </div>
+
+                <div class="personal-info">
+                    <h3>Contact Information</h3>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <fa-icon [icon]="faUser" class="icon"></fa-icon>
+                            <span><strong>Name:</strong> Łukasz Gruchała</span>
+                        </li>
+                        <li class="info-item">
+                            <fa-icon [icon]="faHome" class="icon"></fa-icon>
+                            <span><strong>Location:</strong> Kraków, Poland</span>
+                        </li>
+                        <li class="info-item">
+                            <fa-icon [icon]="faPhone" class="icon"></fa-icon>
+                            <span><strong>Phone:</strong> +48 509 966 429</span>
+                        </li>
+                        <li class="info-item">
+                            <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+                            <span><strong>Email:</strong> lukasz.gruchala1&#64;gmail.com</span>
+                        </li>
+                        <li class="info-item">
+                            <fa-icon [icon]="faGithub" class="icon"></fa-icon>
+                            <span><strong>Github:</strong> <a href="https://github.com/lukcaster"
+                                    target="_blank">github.com/lukcaster</a></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-lg-10 col-md-12" data-aos="fade-left">
-                <h3>Personal data</h3>
-                <ul>
-                    <li>
-                        Name
-                    </li>
-                    <li>
-                        Address
-                    </li>
-                    <li>
-                        Age
-                    </li>
-                    <li>
-                        Phone number
-                    </li>
-                    <li>
-                        Email
-                    </li>
-                    <li>
-                        <fa-icon [icon]="masks"> Github repo</fa-icon>
-                    </li>
-                </ul>
+            <!-- Vertical divider -->
+            <div class="divider"></div>
+
+            <!-- Right side: About Me -->
+            <div class="right-column" data-aos="fade-left">
+                <div class="about-text">
+                    <h2>QA Tester & Quality Assurance</h2>
+
+                    <p class="intro">
+                        I have been working as a QA Tester for <strong>4 years</strong>, bringing dedication and
+                        passion to ensuring software quality. Before transitioning into QA, I worked in unrelated
+                        fields,
+                        but I discovered my true calling in software testing.
+                    </p>
+
+                    <p class="passion">
+                        <strong>Testing is my passion.</strong> I continuously develop my skills and stay current with
+                        industry best practices. My expertise spans from end-to-end automation testing with
+                        <strong>Playwright</strong> to conducting comprehensive <strong>performance testing</strong>.
+                    </p>
+
+                    <p class="leadership">
+                        Beyond technical testing, I have experience in <strong>leading testing teams</strong> and
+                        <strong>establishing testing standards</strong> within organizations. I believe in building
+                        quality into the development process from the ground up and fostering a culture where
+                        quality is everyone's responsibility.
+                    </p>
+
+                    <div class="highlights">
+                        <h3>Key Areas of Expertise:</h3>
+                        <ul class="expertise-list">
+                            <li>Test Automation with Playwright</li>
+                            <li>Performance & Load Testing</li>
+                            <li>Team Leadership & Mentoring</li>
+                            <li>Implementing Testing Standards & Best Practices</li>
+                            <li>Quality Assurance Strategy</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

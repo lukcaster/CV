@@ -1,0 +1,210 @@
+.about-section {
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 350px 2px 1fr;
+    gap: 50px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.personal-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item:hover {
+    padding-left: 10px;
+    background-color: #f8f9fa;
+}
+
+.icon {
+    min-width: 30px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.info-item span {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.info-item strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+.info-item a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Vertical Divider */
+.divider {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #007bff, transparent);
+    min-height: 500px;
+    margin: 0 20px;
+}
+
+/* Right Column */
+.right-column {
+    padding: 20px 0;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-text .intro {
+    font-size: 1.15rem;
+    color: #333;
+}
+
+.about-text .passion {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.about-text .leadership {
+    margin-top: 20px;
+}
+
+.highlights {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlights h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.expertise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expertise-list li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.expertise-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        max-width: 250px;
+    }
+
+    .info-container h3 {
+        font-size: 1.5rem;
+    }
+}
