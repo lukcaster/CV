@@ -17,11 +17,11 @@ export class HomeComponent implements AfterViewInit {
           'Łukasz Gruchała<br/>Automation Tester<br/>AI-using Tester'
         ],
         typeSpeed: 35,
-        backSpeed: 400,
+        backSpeed: 100,
         loop: true,
         backDelay: 100,
         startDelay: 50,
-        smartBackspace: false
+        smartBackspace: true
       };
 
       const typed = new Typed('.typed', options);
