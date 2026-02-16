@@ -20,9 +20,13 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Flatten build output structure
+        run: |
+          cp -r docs/browser/* docs/
+          rm -rf docs/browser
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/cv
-          cname: false
+          publish_dir: ./docs
