@@ -1,10 +1,9 @@
-import { NgStyle } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import Typed from 'typed.js';
 
 @Component({
   selector: 'app-home',
-  imports: [NgStyle],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
