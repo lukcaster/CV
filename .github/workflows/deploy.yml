@@ -18,19 +18,10 @@ jobs:
           node-version: "20"
 
       - run: npm ci
-      # Jawnie ustawiamy base-href na nazwę repozytorium (zmienna GitHub Actions)
-      - run: npm run build -- --base-href /$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')/
-
-      - name: Flatten build output structure
-        run: |
-          # Przeniesienie zawartości browser do głównego katalogu docs
-          cp -r docs/browser/* docs/ 2>/dev/null || :
-          # Jeśli są inne foldery obok browser (np. media, assets), zostaną zachowane
-          rm -rf docs/browser
-          touch docs/.nojekyll
+      - run: npm run build -- --base-href /CV/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./dist/cv/browser
