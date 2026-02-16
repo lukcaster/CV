@@ -24,6 +24,7 @@ jobs:
         run: |
           cp -r docs/browser/* docs/
           rm -rf docs/browser
+          touch docs/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
